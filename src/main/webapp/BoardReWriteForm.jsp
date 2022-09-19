@@ -21,7 +21,7 @@
 			</tr>
 			<tr height="40">
 				<td width="150" align="center">이메일</td>
-				<td width="450"><input type="email" name="wemailriter" size="60"></td>
+				<td width="450"><input type="email" name="email" size="60"></td>
 			</tr>
 			<tr height="40">
 				<td width="150" align="center">비밀 번호</td>
