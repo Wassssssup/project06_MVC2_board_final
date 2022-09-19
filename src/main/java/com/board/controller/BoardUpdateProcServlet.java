@@ -49,13 +49,14 @@ public class BoardUpdateProcServlet extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		
 		int num = Integer.parseInt(request.getParameter("num"));
-		String getpassword = request.getParameter("pass");
+		BoardDAO bdao=new BoardDAO();
+		
+		String getpassword = bdao.getPass(num);
 		String pass = request.getParameter("password");
 		String subject = request.getParameter("subject");
 		String content = request.getParameter("content");
 		
 		if(pass.equals(getpassword)) {
-			BoardDAO bdao=new BoardDAO();
 			bdao.updateBoard(subject,content,num);
 			
 			request.setAttribute("msg", "수정되었습니다.");

@@ -25,6 +25,7 @@
 			<td width="150" align="center">작성일</td>
 			<td width="80" align="center">조회수</td>
 		</tr>
+		<%-- <c:set var="number" value="${number }" /> --%>
 		<c:forEach var ="bdto" items="${vec }">
 		
 		<tr height = "40">
@@ -41,6 +42,7 @@
 		<td width="150" align="center">${bdto.reg_date }</td>
 		<td width="80" align="center">${bdto.readcount }</td>
 		</tr>
+		<%-- <c:set var="number" value="${number-1 }"></c:set>  --%> 
 		</c:forEach>
 	</table>
 	
